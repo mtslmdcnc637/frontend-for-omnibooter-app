@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;500;600;700;800;900&display=swap');
+:root{
+    --bg-light: #f4f4f4;
+    --bg-red: #f33;
+    --bg-alpha-light: rgba(255, 255, 255, 0.3);
+    --bg-alpha-dark: rgba(0, 0, 0, 0.3);
+    --bg-alpha-red: rgba(255, 30, 30, 0.3);
+    --bg-blue: #0d6efd;
+    --bg-green: #198754;
+    font-size: 13px;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Heebo', sans-serif;
+    background-image: linear-gradient(180deg, #000000 0%, #335 52%, #113 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.btn{
+    margin-left: 1rem;
+}
+.bg-alpha-dark{
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100vw;
+    padding: 2rem;
+}
+
+#hero h4{
+    font-size: 4.2rem;
+    color:var(--bg-light);
+    letter-spacing: 0;
+    width: 100%;
+    font-weight: 800;
+    text-align: center;
+}
+#hero h3{
+    font-size: 3.4rem;
+    font-weight: 700;
+    color:#ffffff;
+
+}
+#hero p {
+    width: 55%;
+    color:#f4f4f4;
+    font-weight: 300;
+    font-size: 1.3rem;
+    text-align: center;
+}
+#buttons{
+    display: grid;
+    width: 40%;
+    grid-template-columns: 50% 50%;
+    grid-gap:2rem;
+    place-content: center;
+}
+.login, .prices{
+    padding: 1.3rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    border: none;
+    color:#f4f4f4;
+    transition: 0.2s linear;
+}
+.login:hover,
+.prices:hover {
+    transform: scale(110%);
+}
+
+.login{
+    background-color: var(--bg-blue);
+}
+.prices{
+    background-color: var(--bg-green);
+}
+.cards{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    place-content: center;
+    place-items: center;
+    grid-gap:2rem;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.card{
+    padding: 2rem;
+    text-align: center;
+    color:#333;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+#samples{
+    background-color: var(--bg-light);
+    margin: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#samples h1{
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    text-align: center;
+}
+
+.text-sample{
+    padding: 3rem;
+    width: 50%;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--bg-alpha-dark);
+}
+
