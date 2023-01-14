@@ -80,11 +80,14 @@ body{
     border: none;
     color:#f4f4f4;
     transition: 0.2s linear;
+    text-decoration: none;
 }
 .login:hover,
 .prices:hover {
     transform: scale(110%);
 }
+
+
 
 .login{
     background-color: var(--bg-blue);
@@ -166,6 +169,195 @@ footer{
     background-color: var(--bg-alpha-dark);
     padding: 2rem;
     max-width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 770px){
+    #hero{
+        width: 100%;
+        padding: 1rem;
+    }
+        #hero h4 {
+            font-size: 3.2rem;
+            line-height: 4.4rem;
+        }
+    
+        #hero h3 {
+            font-size: 3rem;
+            line-height: 3rem;
+    
+        }
+    
+        #hero p {
+            width: 85%;
+        }
+    
+        #buttons {
+            width: 80%;
+            margin-bottom: 5rem;
+        }
+        .cards {
+            grid-template-columns: 50% 50% ;
+            grid-template-rows: 50% 50%;
+            width: 90%;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            max-width: 90vw;
+
+        }
+    
+    
+        #samples {
+            background-color: var(--bg-light);
+            margin: 3rem;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-width: 100vw;
+        }
+    
+        #samples h1 {
+            width: 100%;
+            margin: 1rem 0 2rem 0;
+            text-align: center;
+        }
+    
+        .text-sample {
+            padding: 3rem;
+            width: 100%;
+        }
+    
+        #prices {
+            padding: 5rem 5rem;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-gap: 2rem;
+            width: 100%;
+            max-width: 100vw;
+            place-content: center;
+        }
+    
+        .card-price {
+            padding: 2rem;
+            background-color: var(--bg-alpha-dark);
+            text-align: center;
+            color: #fff;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .card-price h4 {
+            color: #aaf;
+        }
+    
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background-color: var(--bg-alpha-dark);
+            padding: 2rem;
+            max-width: 100vw;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 430px){
+    #hero{
+        width: 100%;
+        padding: 1rem;
+    }
+        #hero h4 {
+            font-size: 4.2rem;
+            line-height: 4.4rem;
+            margin-top: 3rem;
+        }
+    
+        #hero h3 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+    
+        }
+    
+        #hero p {
+            width: 95%;
+        }
+    
+        #buttons {
+            width: 90%;
+            margin-bottom: 3rem;
+        }
+        .cards {
+            grid-template-columns: 100% ;
+            grid-template-rows: 25% 25% 25% 25%;
+            width: 80%;
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            max-width: 80vw;
+
+        }
+    
+    
+        #samples {
+            margin: 3rem;
+            padding: 1rem;
+            max-width: 100vw;
+
+        }
+    
+        #samples h1 {
+            width: 100%;
+            padding: 0.5rem;
+            text-align: center;
+        }
+    
+        .text-sample {
+            padding: 1rem;
+            width: 100%;
+        }
+    
+        #prices {
+            padding: 5rem 5rem;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 25% 25% 25%;
+            grid-gap: 2rem;
+            width: 100%;
+            max-width: 100vw;
+            place-content: center;
+        }
+    
 }
 
 
